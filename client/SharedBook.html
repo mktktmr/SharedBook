@@ -3,12 +3,30 @@
 </head>
 
 <body>
-  <h1>Welcome to Meteor!</h1>
-
-  {{> hello}}
+  <!-- menu -->
+  <div class="ui secondary pointing menu">
+    {{#if currentUser}}
+      <a class="item active" id="menuTabLend">
+        借りる
+      </a>
+      <a class="item" id="menu-tab-borrow">
+        貸す
+      </a>
+    {{/if}}
+    <div class="right menu">
+      <a class="ui item">
+          {{> loginButtons align="right"}}
+      </a>
+    </div>
+  </div>
+  <!-- contents body -->
+  {{#if currentUser}}
+    <!-- TODO insert after login template -->
+  {{else}}
+    {{> login}}
+  {{/if}}
 </body>
 
-<template name="hello">
-  <button>Click Me</button>
-  <p>You've pressed the button {{counter}} times.</p>
+<template name="login">
+    <div class="login-background"></div>
 </template>

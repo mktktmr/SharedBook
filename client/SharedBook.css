@@ -1,1 +1,8 @@
 /* CSS declarations go here */
+
+.login-background {
+    min-height: 100%;
+    background: #fff url('/img/login-background.jpg');
+    background-position: top center;
+    background-size: cover;
+}
