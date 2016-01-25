@@ -1,5 +1,6 @@
 /* CSS declarations go here */
 
+/*html {*/
 .login-background {
     min-height: 100%;
     background: #fff url('/img/login-background.jpg');
